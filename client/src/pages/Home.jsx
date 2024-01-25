@@ -9,6 +9,18 @@ const Home = () => {
       title: "Title 1",
       desc: "Description 1",
       img: "https://picsum.photos/200/300"
+    },
+    {
+      id: 1,
+      title: "Title 2 lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      img: "https://picsum.photos/200/300"
+    },
+    {
+      id: 1,
+      title: "Title 3",
+      desc: "Description lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      img: "https://picsum.photos/200/300"
     }
   ];
 
