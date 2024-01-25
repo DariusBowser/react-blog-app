@@ -1,34 +1,33 @@
-$lightGreen : #b9e7e7;
+$lightGreen: #b9e7e7;
 
-
-.app{
+.app {
   display: flex;
   justify-content: center;
 
-  .container{
+  .container {
     width: 1024px;
-  // LOGIN & Register
+    // LOGIN & Register
 
-  .link{
-    text-decoration: none;
-    color: inherit;
-  }
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
 
-    .auth{
+    .auth {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh; 
+      height: 100vh;
       background-color: $lightGreen;
 
-      h1{
+      h1 {
         margin-bottom: 20px;
-        color : Black;
+        color: Black;
         margin-bottom: 20px;
       }
 
-      form{
+      form {
         display: flex;
         flex-direction: column;
         padding: 20px;
@@ -37,81 +36,126 @@ $lightGreen : #b9e7e7;
         gap: 20px;
       }
 
-        input{
-          padding: 10px;
-          border:none;
-          border-bottom: 1px solid gray;
+      input {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid gray;
       }
       button {
         padding: 10px;
         border: none;
-        color : white;
+        color: white;
         background-color: teal;
         cursor: pointer;
       }
 
-      span{
+      span {
         font-size: 12px;
         text-align: center;
       }
 
-      p{
+      p {
         font-size: 12px;
         color: red;
         text-align: center;
       }
-  }
+    }
 
+    // NavBar
 
-  // NavBar
+    .navbar {
+      .container {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-  .navbar{
-    .container{
-      padding: 10px 0px;
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+
+        .links {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          h6 {
+            font-size: 16px;
+            font-weight: 300;
+          }
+
+          span {
+            cursor: pointer;
+          }
+          .write {
+            background-color: $lightGreen;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            border: 1px solid white;
+
+            &:hover {
+              background-color: white;
+              color: teal;
+              border: 1px solid teal;
+            }
+          }
+        }
+      }
+    }
+
+    //FOOTER
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      background-color: $lightGreen;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      font-size: 12px;
 
-      .logo{
-        img{
-          width: 120px
-        }
+      img {
+        height: 50px;
       }
+    }
 
-      .links{
+    // HOME
+
+    .home {
+      .posts {
+        margin-top: 50px;
         display: flex;
-        align-items: center;
-        gap: 10px;
+        flex-direction: column;
+        gap: 150px;
 
-        h6{
-          font-size: 16px;
-          font-weight: 300;
-        }
-
-
-        span{
-          cursor: pointer;
-        }
-        .write{
-          background-color: $lightGreen;
-          width: 50px;
-          height:50px;
-          border-radius: 50%;
+        .post {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: 300;
-          border: 1px solid white;
+          gap: 100px;
 
-          &:hover{
-            background-color: white;
-            color: teal;
-            border: 1px solid teal;
+          &:nth-child(2n+1){
+            flex-direction: row-reverse;
+          }
+
+          .img {
+            flex: 2;
+
+            img {
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover;
+            }
+          }
+          .content {
+            flex: 3;
           }
         }
       }
     }
   }
-}
-
 }
